@@ -1,0 +1,46 @@
+{
+  "name": "express-mongo-blog",
+  "version": "1.0.0",
+  "description": "Blog application built using express.js and mongodb with ejs template engine",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/endalk200/express-mongo-blog.git"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "mongo",
+    "blog"
+  ],
+  "author": "endalk200",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/endalk200/express-mongo-blog/issues"
+  },
+  "homepage": "https://github.com/endalk200/express-mongo-blog#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.9.0",
+    "mongoose": "^5.11.8",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6",
+    "sass": "^1.30.0",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^8.0.12",
+    "typescript": "^4.1.3",
+    "webpack": "^5.11.0",
+    "webpack-cli": "^4.3.0",
+    "webpack-dashboard": "^3.2.1"
+  }
+}
