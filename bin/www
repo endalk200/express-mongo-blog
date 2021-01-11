@@ -50,9 +50,8 @@ function normalizePort(val) {
 }
 
 /**
- * Event listener for HTTP server "error" event.
+ * Error handler. Error event handler from http-error module
  */
-
 function onError(error) {
     if (error.syscall !== 'listen') {
         throw error;
@@ -80,7 +79,6 @@ function onError(error) {
 /**
  * Event listener for HTTP server "listening" event.
  */
-
 function onListening() {
     var addr = server.address();
     var bind = typeof addr === 'string'
