@@ -4,7 +4,13 @@
   "description": "Blog application built using express.js and mongodb with ejs template engine",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www",
+    "serverstart": "DEBUG=express-mongo-blog:* npm run devstart",
+    "build": "webpack",
+    "build-watch": "webpack --watch",
+    "stats": "webpack-dashboard -- webpack"
   },
   "repository": {
     "type": "git",
@@ -23,7 +29,9 @@
   },
   "homepage": "https://github.com/endalk200/express-mongo-blog#readme",
   "dependencies": {
+    "@popperjs/core": "^2.6.0",
     "bcrypt": "^5.0.0",
+    "bootstrap": "^5.0.0-beta1",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.5",
@@ -33,7 +41,11 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "autoprefixer": "^10.1.0",
+    "css-loader": "^5.0.1",
     "nodemon": "^2.0.6",
+    "postcss": "^8.2.1",
+    "postcss-loader": "^4.1.0",
     "sass": "^1.30.0",
     "sass-loader": "^10.1.0",
     "style-loader": "^2.0.0",
