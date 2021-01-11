@@ -1,0 +1,14 @@
+
+/**
+* If you want to bundle your bootstrap with your project you can 
+* use the following import after installing bootstrap using 
+* `npm install bootstrap@next` this will install the version 5
+* of bootstrap which is the latest.
+*/
+@import "~bootstrap/scss/bootstrap"; // The sass bootstrap
+// @import 'bootstrap/dist/css/bootstrap.min.css';
+
+.undecorated_link {
+    text-decoration: none !important;
+    font-weight: 600;
+}
